@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Baloo 2', cursive;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+
+  color: rgb(255, 255, 255);
+  background-color: #2a263d;
+  /* color: #6435ff; */
+  /* color: rgb(217, 217, 217); */
+  /* color: rgb(34, 141, 38); */
+  /* background-color: #121213; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+table {
+  clip-path: inset(0 0 0 0 round 10px);
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #383636; /* Black */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
